@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>About Me</title>
+    <link href="styles/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form action="mailto:technical.mcv@gmail.com" method="post" enctype="text/plain" id="forms">
+    <fieldset>
+        <legend>Biographical Information information:</legend>
+            First name: <input type="text" name="firstname" class="texts"/><br/>
+            Last name: <input type="text" name="lastname" class="texts"/><br />
+            Email: <input type="text" name="lastname" class="texts"/>
+        </fieldset>
+
+        <fieldset>
+        <legend>Some things about me</legend>
+        <p>Opinion of WRWS201</p>
+        
+            <input type="radio" name="Opinion" value="Horrible" class="radio"/>Horrible<br>
+            <input type="radio" name="Opinion" value="OK" checked="checked" class="radio"/>OK<br />
+            <input type="radio" name="Opinion" value="Great" class="radio"/> Great
+
+            <p>I like the following foods</p>
+            <input type="checkbox" name="food" value="Ice Cream" class="checkbox"/>Ice Cream<br/>
+            <input type="checkbox" name="food" value="Chocolate" class="checkbox"/>Chocolate<br/>
+            <input type="checkbox" name="food" value="Veggies" class="checkbox"/>Veggies<br/>
+            <input type="checkbox" name="food" value="Steak" class="checkbox"/>Steak<br/>
+            <input type="checkbox" name="food" value="Burgers" class="checkbox"/>Burgers<br/>
+            <input type="checkbox" name="food" value="Salad" class="checkbox"/>Salad<br/>
+
+            <p>I would love to drive the following car:</p>
+            <select name="cars" id="cars">
+                <option value="bettle">VW Bettle</option>
+                <option value="bmw">BMW Z3</option>
+                <option value="mini">Mini Cooper</option>
+                <option value="uno">Fiat Uno</option>
+            </select>
+
+            <p>Favourite qoute:</p>
+            <textarea name="qoute" rows="10" cols="50"></textarea>
+            <br />
+            <input type="reset" value="Clear" class="buttons"/>
+            <input type="submit" value="Send" class="buttons"/>
+            
+        </fieldset>
+    </form> 
+</body>
+</html>

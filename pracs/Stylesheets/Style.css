@@ -1,0 +1,35 @@
+﻿body 
+{
+}
+.text_footer
+{
+    background-color: #C0C0C0;
+    clip: rect(auto, auto, auto, auto);
+    width: auto;
+    font-variant: normal;
+    font-style: italic;
+    clear:both;text-align:center;
+}
+#Layout
+{
+    background-color:Blue;
+}
+#FlexLayout
+{
+    color: #000000;
+    width: 50%;
+    right: auto;
+    clip: rect(auto, auto, auto, auto);
+    background-color: #00FF00;
+    float:right;
+}
+#LayOut_4
+{
+    background-color: #808080;
+    clip: rect(auto, auto, auto, auto);
+    width: 50%;
+    left: 50%;
+    font-family: Verdana;
+    float:left;
+}
+
