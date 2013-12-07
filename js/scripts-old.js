@@ -7,7 +7,7 @@ function ouch() {
 
 }
 
-function register() {
+function register-old() {
     {
         var x;
 
@@ -100,7 +100,7 @@ function ouch() {
 
 
 if (document.getElementById) window.onload = setup;
-function showPrompt() {
+function register() {
     var x;
     answer = prompt("Please enter your name", "kweku");
     x = document.getElementById("lv");
@@ -113,21 +113,12 @@ function textAdjust()
 }
 function changeStyle() 
 {
-    document.getElementById("content7").style.background = "Yellow";
+    document.getElementById("content7").style.background = "Pink";
   
 }
 function setFocus() 
 {
     document.getElementById("fname").focus();
-}
-
-function padValue(value) {
-    if (value < 10) {
-        return "0" + value;
-    }
-    else {
-        return value;
-    }
 }
 
 function time()
@@ -153,42 +144,33 @@ function time()
 	months[10] = "October";
 	months[11] = "November";
 	months[12] = "December";
-
-
-	t = document.getElementById("times");
-	t.innerHTML = padValue(hours) + ":" + padValue(minutes);
-
-    /*
+	
 	if(minutes<10)
 	{
 		t = document.getElementById("times");
     t.innerHTML = (hours + ":0" + minutes);
 	}	
-	
-    if(hours<10)
+	else if(hours<10)
 	{
 	t = document.getElementById("times");
     t.innerHTML = ("0" + hours + ":" + minutes);
 	}
-	
-    if(hours<10 && minutes>9)
+	else if(hours<10 && minutes>9)
 	{
 	t = document.getElementById("times");
     t.innerHTML = ("0" + hours + ":" + minutes);
 	}
-	
-    if(hours<10 && minutes<10)
+	else if(hours<10 && minutes<10)
 	{
 	t = document.getElementById("times");
     t.innerHTML = ("0" + hours + ":0" + minutes);
 	}
-	
-    if(hours>9 && minutes>9)
+	else if(hours>9 && minutes>9)
 	{
 		t = document.getElementById("times");
 		t.innerHTML = (hours + ":" + minutes);	
 	}
-    */
+
 	
 	
 	
@@ -204,3 +186,6 @@ function time()
 }
 
 
+function closeWin() {
+    myWindow.close();
+}
